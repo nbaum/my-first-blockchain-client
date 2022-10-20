@@ -8,7 +8,8 @@ async function main() {
   const [account] = await signer.getAccounts()
 
   const client = await cudos.SigningStargateClient
-    .connectWithSigner("https://sentry1.gcp-uscentral1.cudos.org:36657",
+    .connectWithSigner(
+      "https://sentry1.gcp-uscentral1.cudos.org:36657",
       signer,
       { gasPrice: { amount: "5000000000000", denom: "acudos" } }
     )
