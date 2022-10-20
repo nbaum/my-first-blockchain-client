@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "cudosjs": "^1.1.1"
+  }
+}
