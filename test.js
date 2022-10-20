@@ -3,7 +3,7 @@ const cudos = require("cudosjs")
 async function main() {
 
   const signer = await cudos.DirectSecp256k1HdWallet
-    .fromMnemonic("ordinary witness such toddler tag mouse helmet perfect venue eyebrow upgrade rabbit", { prefix: "cudos" })
+    .fromMnemonic("ordinary witness such toddler tag mouse helmet perfect venue eyebrow upgrade rabbit")
 
   const [account] = await signer.getAccounts()
 
