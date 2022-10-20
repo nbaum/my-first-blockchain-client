@@ -15,7 +15,7 @@ async function main() {
 
   console.log(await client.getAllBalances(account.address))
 
-  await client.sendTokens(account.address, "<recipient-address>", { denom: "acudos", amount: "1000000000000000000" })
+  await client.sendTokens(account.address, "<recipient-address>", [{ denom: "acudos", amount: "1000000000000000000" }], "auto")
 
 }
 
